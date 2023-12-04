@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICA!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   
+    <script src="js/app.js"></script>
+</head>
+ <link rel="stylesheet" type="text/css" src="css/style.css">
+<body>
+    ​<h1>JavaScript HTML Event's</h1>
+    <p>TEXTO</p>
+    ​<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+    <p id="demo"></p>
+    <p>BOTON</p>
+    <div>
+        <button onclick="this.innerHTML=Date()">The time is?</button>
+    </div>
+    
+    ​<h1>JavaScript HTML jQuery (AJAX)</h1>
+    <button>Hazme click!</button>
+    <p><img src="img/jQuery img.jpg"></p>
+
+    ​<h1>JavaScript HTML Functions</h1>
+    <p>Llame a una función que realiza un cálculo y devuelve el resultado:</p>
+     <p id="demos"></p>
+     <script>
+      function myFunction(p1, p2) { return p1 * p2;}
+      let result = myFunction(4, 3);
+      document.getElementById("demos").innerHTML = result;
+     </script>
+
+    ​<h1>JavaScript HTML Methods</h1>
+    <p>Acomodar los valores y darles una funcion</p>
+    <div>
+        <p id="deimos"></p>
+    <script>
+        const person = {
+            firstName: "Johny",
+            lastName: "Bravo",
+            id: 5566,
+            fullName: function() {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+        document.getElementById("deimos").innerHTML = person.fullName();
+    </script>
+    </div>
+
+    <div>
+        ​<p id="dem"></p>
+    <script>
+        const persona = {
+            oneName: "Tiana",
+            twoName: "Regina",
+            id: 5566,
+          };
+          persona.name = function() {
+            return (this.oneName + " " + this.twoName).toUpperCase();
+          };
+          
+          document.getElementById("dem").innerHTML =
+          "My father is " + persona.name();
+        </script>
+    </div>
+    ​
+</body>
+</html>
